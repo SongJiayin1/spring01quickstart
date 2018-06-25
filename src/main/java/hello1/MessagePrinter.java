@@ -1,14 +1,10 @@
-package hello;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+package hello1;
 
 /**
  * Author: SongJiayin
  * Date: 2018/6/23 19:44
  * Description:
  */
-@Component
 public class MessagePrinter {
 
     public MessagePrinter() {
@@ -17,7 +13,6 @@ public class MessagePrinter {
     }
 
     private MessageService service;
-    @Autowired
     public void setService(MessageService service) {
         this.service = service;
     }
